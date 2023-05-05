@@ -1,1 +1,14 @@
-<p>agreement works!</p>
+<div class="container">
+  <nav>
+    <a routerLink="details" [replaceUrl]="true">Details</a>
+    <a routerLink="finances" [replaceUrl]="true">Finances</a>
+  </nav>
+  <div class="content">
+    <div class="header">
+      <p>agreement works!</p>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<hr />

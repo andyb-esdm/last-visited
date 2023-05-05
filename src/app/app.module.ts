@@ -7,7 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { SiteComponent } from './site/site.component';
 import { ContactsComponent } from './site/contacts/contacts.component';
-import { AgreementsComponent } from './site/agreements/agreements.component';
+import { SiteAgreementsComponent } from './site/agreements/agreements.component';
 import { ParcelsComponent } from './site/parcels/parcels.component';
 import { AgreementComponent } from './agreement/agreement.component';
 import { DetailsComponent } from './agreement/details/details.component';
@@ -20,7 +20,7 @@ import { FinancesComponent } from './finances/finances.component';
     SearchComponent,
     SiteComponent,
     ContactsComponent,
-    AgreementsComponent,
+    SiteAgreementsComponent,
     ParcelsComponent,
     AgreementComponent,
     DetailsComponent,
