@@ -18,11 +18,11 @@ export class SiteComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit(): void {
-    this.subscription.add(this.subscribeToRouterEvents());
+    // this.subscription.add(this.subscribeToRouterEvents());
   }
 
   ngOnDestroy(): void {
-    this.subscription.unsubscribe();
+    // this.subscription.unsubscribe();
   }
 
   private subscribeToRouterEvents(): Subscription {

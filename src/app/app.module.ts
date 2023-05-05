@@ -9,7 +9,9 @@ import { SiteComponent } from './site/site.component';
 import { ContactsComponent } from './site/contacts/contacts.component';
 import { AgreementsComponent } from './site/agreements/agreements.component';
 import { ParcelsComponent } from './site/parcels/parcels.component';
-import { LastVisitedComponent } from './site/last-visited/last-visited.component';
+import { AgreementComponent } from './agreement/agreement.component';
+import { DetailsComponent } from './agreement/details/details.component';
+import { FinancesComponent } from './finances/finances.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { LastVisitedComponent } from './site/last-visited/last-visited.component
     ContactsComponent,
     AgreementsComponent,
     ParcelsComponent,
-    LastVisitedComponent,
+    AgreementComponent,
+    DetailsComponent,
+    FinancesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

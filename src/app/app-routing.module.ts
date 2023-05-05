@@ -6,7 +6,8 @@ import { SiteComponent } from './site/site.component';
 import { ContactsComponent } from './site/contacts/contacts.component';
 import { AgreementsComponent } from './site/agreements/agreements.component';
 import { ParcelsComponent } from './site/parcels/parcels.component';
-import { LastVisitedComponent } from './site/last-visited/last-visited.component';
+import { DetailsComponent } from './agreement/details/details.component';
+import { FinancesComponent } from './finances/finances.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -16,11 +17,19 @@ const routes: Routes = [
     path: 'site/:id',
     component: SiteComponent,
     children: [
-      { path: '', component: LastVisitedComponent, pathMatch: 'full' },
+      { path: '', redirectTo: 'last-visited', pathMatch: 'full' },
       { path: 'contacts', component: ContactsComponent },
       { path: 'agreements', component: AgreementsComponent },
       { path: 'parcels', component: ParcelsComponent },
-      { path: 'last-visited', component: LastVisitedComponent },
+    ],
+  },
+  {
+    path: 'agreement/:id',
+    component: AgreementsComponent,
+    children: [
+      { path: '', redirectTo: 'last-visited', pathMatch: 'full' },
+      { path: 'details', component: DetailsComponent },
+      { path: 'finances', component: FinancesComponent },
     ],
   },
 ];
