@@ -9,6 +9,9 @@ import { ParcelsComponent } from './site/parcels/parcels.component';
 import { DetailsComponent } from './agreement/details/details.component';
 import { FinancesComponent } from './finances/finances.component';
 import { AgreementComponent } from './agreement/agreement.component';
+import { CompartmentComponent } from './compartment/compartment.component';
+import { CompartmentDetailsComponent } from './compartment/compartment-details/compartment-details.component';
+import { CompartmentLabelsComponent } from './compartment/compartment-labels/compartment-labels.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -31,6 +34,14 @@ const routes: Routes = [
       { path: '', redirectTo: 'details', pathMatch: 'full' },
       { path: 'details', component: DetailsComponent },
       { path: 'finances', component: FinancesComponent },
+    ],
+  },
+  {
+    path: 'compartment/:id',
+    component: CompartmentComponent,
+    children: [
+      { path: 'details', component: CompartmentDetailsComponent },
+      { path: 'labels', component: CompartmentLabelsComponent },
     ],
   },
 ];

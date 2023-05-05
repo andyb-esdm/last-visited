@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    border-inline-end: 1px solid lightgray;
+    padding-inline-end: 1rem;
+}
+
+nav a {
+    margin-block: 1rem;
+}
+
+.content {
+    padding: 1rem;
+}
