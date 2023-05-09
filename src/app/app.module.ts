@@ -11,12 +11,12 @@ import { SiteAgreementsComponent } from './site/agreements/agreements.component'
 import { ParcelsComponent } from './site/parcels/parcels.component';
 import { AgreementComponent } from './agreement/agreement.component';
 import { DetailsComponent } from './agreement/details/details.component';
-import { FinancesComponent } from './finances/finances.component';
+import { FinancesComponent } from './agreement/finances/finances.component';
 import { CompartmentComponent } from './compartment/compartment.component';
 import { CompartmentDetailsComponent } from './compartment/compartment-details/compartment-details.component';
 import { CompartmentLabelsComponent } from './compartment/compartment-labels/compartment-labels.component';
 import { OtherCompartmentStuffComponent } from './compartment/other-compartment-stuff/other-compartment-stuff.component';
-import { DetailsPageNavigationService } from './servies/details-page-navigation.service';
+import { DetailsPageNavigationService } from './services/details-page-navigation.service';
 
 @NgModule({
   declarations: [

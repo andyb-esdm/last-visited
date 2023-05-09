@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { DetailsPageNavigationService } from './servies/details-page-navigation.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +8,4 @@ import { DetailsPageNavigationService } from './servies/details-page-navigation.
 export class AppComponent {
   title = 'last-visited';
 
-  // constructor(
-  //   private detailsPageNavigationService: DetailsPageNavigationService
-  // ) { }
 }
