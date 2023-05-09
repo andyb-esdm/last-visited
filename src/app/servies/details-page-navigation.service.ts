@@ -19,12 +19,9 @@ export class DetailsPageNavigationService {
         const url = (event as NavigationEnd).url;
         if (url.length > 0) {
           const urlSegments = url.split('/');
-          console.log(urlSegments)
           const parentUrl = urlSegments[1];
           const childUrl = urlSegments[3];
-          console.log(parentUrl, childUrl)
           if (this.defaultChildRoutes.has(parentUrl)) {
-            console.log(parentUrl)
             if (childUrl === '' || childUrl === undefined) {
               this.router.navigate([url, this.defaultChildRoutes.get(parentUrl)], {
                 replaceUrl: true,
@@ -33,7 +30,6 @@ export class DetailsPageNavigationService {
               this.defaultChildRoutes.set(parentUrl, childUrl)
             }
           }
-          console.log(this.defaultChildRoutes);
         }
       });
   }

@@ -9,7 +9,7 @@ import { DetailsPageNavigationService } from './servies/details-page-navigation.
 export class AppComponent {
   title = 'last-visited';
 
-  constructor(
-    private detailsPageNavigationService: DetailsPageNavigationService
-  ) { }
+  // constructor(
+  //   private detailsPageNavigationService: DetailsPageNavigationService
+  // ) { }
 }
