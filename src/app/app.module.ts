@@ -15,6 +15,7 @@ import { FinancesComponent } from './finances/finances.component';
 import { CompartmentComponent } from './compartment/compartment.component';
 import { CompartmentDetailsComponent } from './compartment/compartment-details/compartment-details.component';
 import { CompartmentLabelsComponent } from './compartment/compartment-labels/compartment-labels.component';
+import { OtherCompartmentStuffComponent } from './compartment/other-compartment-stuff/other-compartment-stuff.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { CompartmentLabelsComponent } from './compartment/compartment-labels/com
     CompartmentComponent,
     CompartmentDetailsComponent,
     CompartmentLabelsComponent,
+    OtherCompartmentStuffComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

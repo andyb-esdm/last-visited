@@ -12,6 +12,7 @@ import { AgreementComponent } from './agreement/agreement.component';
 import { CompartmentComponent } from './compartment/compartment.component';
 import { CompartmentDetailsComponent } from './compartment/compartment-details/compartment-details.component';
 import { CompartmentLabelsComponent } from './compartment/compartment-labels/compartment-labels.component';
+import { OtherCompartmentStuffComponent } from './compartment/other-compartment-stuff/other-compartment-stuff.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -42,6 +43,7 @@ const routes: Routes = [
     children: [
       { path: 'details', component: CompartmentDetailsComponent },
       { path: 'labels', component: CompartmentLabelsComponent },
+      { path: 'other-stuff', component: OtherCompartmentStuffComponent },
     ],
   },
 ];
