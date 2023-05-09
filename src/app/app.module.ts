@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { APP_INITIALIZER, NgModule, inject } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +16,7 @@ import { CompartmentComponent } from './compartment/compartment.component';
 import { CompartmentDetailsComponent } from './compartment/compartment-details/compartment-details.component';
 import { CompartmentLabelsComponent } from './compartment/compartment-labels/compartment-labels.component';
 import { OtherCompartmentStuffComponent } from './compartment/other-compartment-stuff/other-compartment-stuff.component';
+import { DetailsPageNavigationService } from './servies/details-page-navigation.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,14 @@ import { OtherCompartmentStuffComponent } from './compartment/other-compartment-
     OtherCompartmentStuffComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  providers: [
+    {
+      provide: APP_INITIALIZER,
+      deps: [DetailsPageNavigationService],
+      useFactory: (detailsPageNavigationService: DetailsPageNavigationService) => () => null,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CompartmentNavigationService } from './services/compartment-navigation.service';
+import { DetailsPageNavigationService } from './servies/details-page-navigation.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,7 @@ import { CompartmentNavigationService } from './services/compartment-navigation.
 export class AppComponent {
   title = 'last-visited';
 
-  constructor(
-    private compartmentNavigationService: CompartmentNavigationService
-  ) {}
+  // constructor(
+  //   private detailsPageNavigationService: DetailsPageNavigationService
+  // ) { }
 }
